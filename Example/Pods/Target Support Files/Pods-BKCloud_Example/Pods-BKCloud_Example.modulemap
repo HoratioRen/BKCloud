@@ -1,0 +1,6 @@
+framework module Pods_BKCloud_Example {
+  umbrella header "Pods-BKCloud_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

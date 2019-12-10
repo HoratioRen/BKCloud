@@ -1,0 +1,6 @@
+framework module Pods_BKCloud_Tests {
+  umbrella header "Pods-BKCloud_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
