@@ -1,0 +1,6 @@
+framework module BKCloud {
+  umbrella header "BKCloud-umbrella.h"
+
+  export *
+  module * { export * }
+}
