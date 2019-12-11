@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BKCloud'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = '北控云SDK'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/HoratioRen'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'BKSX CN' => 'rss0356@163.com' }
+  s.author           = { 'BKSX CN' => 'bksxapp@163.com' }
   s.source           = { :git => 'https://github.com/HoratioRen/BKCloud.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
