@@ -22,7 +22,7 @@ pod 'BKCloud'
 
 ## Author
 
-BKSX CN, rss0356@163.com
+BKSX CN, bksxapp@163.com
 
 ## License
 
