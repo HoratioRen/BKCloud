@@ -7,7 +7,6 @@
 //
 
 #import "BKDefineHelper.h"
-#import "UIApplication+BKUI.h"
 #import "BKDefine.h"
 
 @implementation BKDefineHelper
