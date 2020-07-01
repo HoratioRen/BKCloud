@@ -10,11 +10,7 @@
 #endif
 #endif
 
-#import "BKCloudComponent.h"
-#import "BKCloudManager.h"
-#import "BKCloudTools.h"
-#import "BKCloudType.h"
-#import "BKNetWorkManager.h"
+#import "BKCloudKit.h"
 #import "BKCategory.h"
 #import "NSArray+BKUI.h"
 #import "NSObject+BKUI.h"

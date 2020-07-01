@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
 
   #s.public_header_files = 'Pod/Classes/*.h'
   
-  s.source_files = 'BKCloud/Classes/Category/BKCloudKit.h'
+  s.source_files = 'BKCloud/Classes/BKCloudKit.h'
   
   s.subspec 'Category' do |category|
       category.source_files = 'BKCloud/Classes/Category/**/*'
@@ -55,6 +55,6 @@ TODO: Add long description of the pod here.
   #s.vendored_frameworks = 'BKCloud/Classes/*.framework'
   
   s.frameworks = 'UIKit', 'Foundation',"CoreLocation"
-  s.dependency 'AFNetworking', '~> 3.2.1'
+  s.dependency 'AFNetworking', '~> 4.0.1'
   s.dependency 'SAMKeychain', '~> 1.5.3'
 end
