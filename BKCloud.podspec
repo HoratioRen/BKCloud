@@ -28,15 +28,26 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/HoratioRen/BKCloud.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-#  s.source_files = 'BKCloud/Classes/**/*'
+  #s.source_files = 'BKCloud/Classes/**/*.{h,m}'
   
   # s.resource_bundles = {
   #   'BKCloud' => ['BKCloud/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/BKCloudKit.h'
+  
+  s.subspec 'Category' do |category|
+      category.source_files = 'BKCloud/Classes/Category/**/*'
+      # category.dependency 'AFNetworking'
+  end
+
+  s.subspec 'Tools' do |tools|
+      tools.source_files = 'BKCloud/Classes/Tools/**/*'
+      # tools.dependency 'YYModel'
+  end
+  
   
   #依赖自己的或别人的Framework文件
   s.vendored_frameworks = 'BKCloud/Classes/*.framework'

@@ -7,6 +7,7 @@
 //
 
 #import "BKViewController.h"
+#import <BKCloud/BKCategory.h>
 
 @interface BKViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
