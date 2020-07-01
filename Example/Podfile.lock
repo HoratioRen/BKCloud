@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - BKCloud (1.0.0):
+  - BKCloud (1.0.2):
     - AFNetworking (~> 3.2.1)
     - SAMKeychain (~> 1.5.3)
   - SAMKeychain (1.5.3)
@@ -33,9 +33,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  BKCloud: b3e712f9d66e7b412783e055b5769fe260cbbcef
+  BKCloud: 39bf22327395a0ba2ee75644253dae469fe32c0e
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: 11181164db734864af228c689045995de0c4cd7a
+PODFILE CHECKSUM: 0ed21b4e080562522cb2644ab94052eae151ed40
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

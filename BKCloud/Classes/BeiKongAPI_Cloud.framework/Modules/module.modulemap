@@ -1,6 +1,0 @@
-framework module BeiKongAPI_Cloud {
-  umbrella header "BeiKongAPI_Cloud.h"
-
-  export *
-  module * { export * }
-}
