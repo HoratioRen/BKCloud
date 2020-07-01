@@ -8,6 +8,7 @@
 
 #import "BKDefineHelper.h"
 #import "BKDefine.h"
+#import "UIApplication+BKUI.h"
 
 @implementation BKDefineHelper
 
@@ -101,7 +102,7 @@
 
 + (UIViewController *)bk_topViewController {
     UIViewController *resultVC;
-    resultVC = [self _topViewController:[BK_KeyWindow rootViewController]];
+    resultVC = [self _topViewController:[[UIApplication.sharedApplication bk_keyWindow] rootViewController]];
     while (resultVC.presentedViewController) {
         resultVC = [self _topViewController:resultVC.presentedViewController];
     }

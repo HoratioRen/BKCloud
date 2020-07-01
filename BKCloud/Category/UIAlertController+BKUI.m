@@ -8,13 +8,15 @@
 
 #import "UIAlertController+BKUI.h"
 #import "BKDefine.h"
+#import "UIApplication+BKUI.h"
+
 @implementation UIAlertController (BKUI)
 
 /**
  *  返回一个view存在于视图阶层上的controller(如无特殊情况, 一般返回最顶层root Controller), 用于呈现AlertViewController, 兼容iOS7以上版本
  */
 + (UIViewController *)controllerInViewHierarchy {
-    UIViewController *mostTopController = BK_KeyWindow.rootViewController;
+    UIViewController *mostTopController = [UIApplication sharedApplication].bk_keyWindow.rootViewController;
     while (mostTopController.presentedViewController) {
         mostTopController = mostTopController.presentedViewController;
     }

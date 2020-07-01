@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BKCloud'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = '北控云SDK'
 
 # This description is used to generate tags and improve search results.
@@ -30,28 +30,32 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  #s.source_files = 'BKCloud/Classes/**/*.{h,m}'
+  #s.source_files = 'BKCloud/**/*.{h,m}'
   
   # s.resource_bundles = {
   #   'BKCloud' => ['BKCloud/Assets/*.png']
   # }
 
-  #s.public_header_files = 'BKCloud/Classes/BKDefine.h'
   
-  s.source_files = 'BKCloud/Classes/BKCloudKit.h'
-  
-  s.subspec 'Category' do |category|
-      category.source_files = 'BKCloud/Classes/Category/**/*'
-      category.dependency 'BKCloud/Classes/Tools/BKDefine'
-  end
+  s.source_files = 'BKCloud/BKCloudKit.h'
 
   s.subspec 'Tools' do |tools|
-      tools.source_files = 'BKCloud/Classes/Tools/**/*'
+      tools.source_files = 'BKCloud/Tools/*.{h,m}'
+      tools.dependency 'BKCloud/Define'
+      tools.dependency 'BKCloud/Category'
   end
   
+  s.subspec 'Category' do |category|
+      category.source_files = 'BKCloud/Category/*.{h,m}'
+      category.dependency 'BKCloud/Define'
+  end
+  
+  s.subspec 'Define' do |ss|
+      ss.source_files = 'BKCloud/BKDefine.h'
+  end
   
   #依赖自己的或别人的Framework文件
-  #s.vendored_frameworks = 'BKCloud/Classes/*.framework'
+  #s.vendored_frameworks = 'BKCloud/*.framework'
   
   s.frameworks = 'UIKit', 'Foundation',"CoreLocation"
   s.dependency 'AFNetworking', '~> 4.0.1'
