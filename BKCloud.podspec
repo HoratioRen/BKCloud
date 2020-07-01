@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BKCloud'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = '北控云SDK'
 
 # This description is used to generate tags and improve search results.
@@ -36,18 +36,17 @@ TODO: Add long description of the pod here.
   #   'BKCloud' => ['BKCloud/Assets/*.png']
   # }
 
-  #s.public_header_files = 'Pod/Classes/*.h'
+  #s.public_header_files = 'BKCloud/Classes/BKDefine.h'
   
   s.source_files = 'BKCloud/Classes/BKCloudKit.h'
   
   s.subspec 'Category' do |category|
       category.source_files = 'BKCloud/Classes/Category/**/*'
-      # category.dependency 'AFNetworking'
+      category.dependency 'BKCloud/Classes/Tools/BKDefine'
   end
 
   s.subspec 'Tools' do |tools|
       tools.source_files = 'BKCloud/Classes/Tools/**/*'
-      # tools.dependency 'YYModel'
   end
   
   
