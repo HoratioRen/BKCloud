@@ -36,7 +36,9 @@ TODO: Add long description of the pod here.
   #   'BKCloud' => ['BKCloud/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/BKCloudKit.h'
+  #s.public_header_files = 'Pod/Classes/*.h'
+  
+  s.source_files = 'BKCloud/Classes/Category/BKCloudKit.h'
   
   s.subspec 'Category' do |category|
       category.source_files = 'BKCloud/Classes/Category/**/*'
@@ -50,7 +52,7 @@ TODO: Add long description of the pod here.
   
   
   #依赖自己的或别人的Framework文件
-  s.vendored_frameworks = 'BKCloud/Classes/*.framework'
+  #s.vendored_frameworks = 'BKCloud/Classes/*.framework'
   
   s.frameworks = 'UIKit', 'Foundation',"CoreLocation"
   s.dependency 'AFNetworking', '~> 3.2.1'
