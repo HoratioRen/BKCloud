@@ -11,9 +11,6 @@
 
 #endif /* BKDefine_h */
 
-#import "BKCategory.h"
-#import "BKDefineHelper.h"
-
 #pragma mark - **** Clang ****
 #define ArgumentToString(macro) #macro
 #define ClangWarningConcat(warning_name) ArgumentToString(clang diagnostic ignored warning_name)
@@ -42,13 +39,6 @@
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
 
-#pragma mark - *** KeyWindow ***
-#define BK_KeyWindow [UIApplication sharedApplication].bk_keyWindow
-
-#pragma mark - *** 状态栏高度 ***
-#define BKStatusBarHeight  [BKDefineHelper bk_statusBarHeight]
-#pragma mark - *** 导航栏内距高度 ***
-#define BKNavigationMargin  [BKDefineHelper bk_navigationMargin]
 
 
 #pragma mark - *** 屏幕宽高 ***
